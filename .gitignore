@@ -1,2 +1,4 @@
 .idea
 *.iml
+newrelic_agent.log
+dump.rdb
