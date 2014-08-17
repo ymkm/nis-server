@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('newrelic');
 var debug = require('debug')('nis-server');
 var app = require('../app');
 
