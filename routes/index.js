@@ -2,8 +2,9 @@ var Q = require('q');
 var QC = require('q-combinators');
 var _ = require('lodash');
 var redis = require('../clients/redis');
-var C = require('../config/config.json');
+var C = require('config');
 var tides = require('../clients/tides');
+var config = require('config');
 
 var express = require('express');
 var router = express.Router();

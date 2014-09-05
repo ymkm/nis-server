@@ -1,7 +1,7 @@
 var Q = require('q');
 var _ = require('lodash');
 var request = require('request');
-var C = require('../config/config.json');
+var C = require('config');
 var U = require('../lib/util');
 
 function getTides() {

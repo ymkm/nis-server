@@ -2,7 +2,7 @@ var express = require('express');
 var dweet = require('../clients/dweet');
 var pubnub = require('../clients/pubnub');
 var redis = require('../clients/redis');
-var C = require('../config/config.json');
+var C = require('config');
 var router = express.Router();
 
 router.get('/', function (req, res) {

@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var timeout = require('connect-timeout');
-
+var config = require('config');
 var routes = require('./routes/index');
 var weather = require('./routes/weather');
 var email = require('./routes/email');

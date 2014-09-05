@@ -3,7 +3,7 @@ var _ = require('lodash');
 var express = require('express');
 var request = require('request');
 var U = require('../lib/util');
-var C = require('../config/config.json');
+var C = require('config');
 var router = express.Router();
 
 var tides = require('../clients/tides');

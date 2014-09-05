@@ -1,5 +1,5 @@
 var Q = require('q');
-var C = require('../config/config.json');
+var C = require('config');
 var U = require('../lib/util.js');
 
 var pubnub = require("pubnub").init({

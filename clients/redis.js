@@ -1,6 +1,6 @@
 var Q = require('q');
 var _ = require('lodash');
-var C = require('../config/config.json');
+var C = require('config');
 var U = require('../lib/util.js');
 redis = require('redis');
 

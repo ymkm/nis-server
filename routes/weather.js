@@ -4,7 +4,7 @@ var express = require('express');
 var request = require('request');
 fs = require('fs');
 
-var C = require('../config/config.json');
+var C = require('config');
 var router = express.Router();
 
 var weather = require('../clients/weather');

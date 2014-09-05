@@ -3,7 +3,7 @@ var _ = require('lodash');
 var request = require('request');
 var parse = require('csv-parse');
 var moment = require('moment');
-var C = require('../config/config.json');
+var C = require('config');
 
 function getWeather() {
 

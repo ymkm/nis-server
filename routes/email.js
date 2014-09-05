@@ -1,7 +1,7 @@
 var Q = require('q');
 var express = require('express');
 var moment = require('moment');
-var C = require('../config/config.json');
+var C = require('config');
 
 var router = express.Router();
 

@@ -1,7 +1,7 @@
 var Q = require('q');
 var _ = require('lodash');
 var Imap = require('imap');
-var C = require('../config/config.json');
+var C = require('config');
 
 function getUnreadCount() {
 
