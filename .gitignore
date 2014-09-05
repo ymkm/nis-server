@@ -2,3 +2,4 @@
 *.iml
 newrelic_agent.log
 dump.rdb
+config/config.json

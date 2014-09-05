@@ -1,0 +1,49 @@
+0,tornado,rain
+1,tropical storm,rain
+2,hurricane,rain
+3,severe thunderstorms,rain
+4,thunderstorms,rain
+5,mixed rain and snow,rain
+6,mixed rain and sleet,rain
+7,mixed snow and sleet,rain
+8,freezing drizzle,rain
+9,drizzle,rain
+10,freezing rain,rain
+11,showers,rain
+12,showers,rain
+13,snow flurries,rain
+14,light snow showers,rain
+15,blowing snow,rain
+16,snow,rain
+17,hail,rain
+18,sleet,rain
+19,dust,rain
+20,foggy,foggy
+21,haze,foggy
+22,smoky,foggy
+23,blustery,windy
+24,windy,windy
+25,cold,cloudy
+26,cloudy,cloudy
+27,mostly cloudy (night),cloudy
+28,mostly cloudy (day),cloudy
+29,partly cloudy (night),cloudy
+30,partly cloudy (day),cloudy
+31,clear (night),sunny
+32,sunny,sunny
+33,fair (night),sunny
+34,fair (day),sunny
+35,mixed rain and hail,rain
+36,hot,sunny
+37,isolated thunderstorms,thundery
+38,scattered thunderstorms,thundery
+39,scattered thunderstorms,thundery
+40,scattered showers,rain
+41,heavy snow,rain
+42,scattered snow showers,rain
+43,heavy snow,rain
+44,partly cloudy,cloudy
+45,thundershowers,thundery
+46,snow showers,rain
+47,isolated thundershowers,thundery
+3200,not available,I dont know

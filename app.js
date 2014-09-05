@@ -4,9 +4,13 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var timeout = require('connect-timeout');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var weather = require('./routes/weather');
+var email = require('./routes/email');
+var tides = require('./routes/tides');
+var location = require('./routes/location');
 
 var app = express();
 
@@ -20,9 +24,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(timeout('20s'));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/weather', weather);
+app.use('/email', email);
+app.use('/tides', tides);
+app.use('/location', location);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,120 @@
+{"query": {
+    "count": 1,
+    "created": "2014-08-23T05:05:19Z",
+    "lang": "en-US",
+    "diagnostics": {
+        "publiclyCallable": "true",
+        "url": {
+            "execution-start-time": "0",
+            "execution-stop-time": "12",
+            "execution-time": "12",
+            "content": "http://weather.yahooapis.com/forecastrss?w=22721167"
+        },
+        "user-time": "13",
+        "service-time": "12",
+        "build-version": "0.2.2666"
+    },
+    "results": {
+        "channel": {
+            "title": "Yahoo! Weather - Bronte, AU",
+            "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Bronte__AU/*http://weather.yahoo.com/forecast/ASXX0086_f.html",
+            "description": "Yahoo! Weather for Bronte, AU",
+            "language": "en-us",
+            "lastBuildDate": "Sat, 23 Aug 2014 2:29 pm AEST",
+            "ttl": "60",
+            "location": {
+                "city": "Bronte",
+                "country": "Australia",
+                "region": "NSW"
+            },
+            "units": {
+                "distance": "mi",
+                "pressure": "in",
+                "speed": "mph",
+                "temperature": "F"
+            },
+            "wind": {
+                "chill": "61",
+                "direction": "110",
+                "speed": "10"
+            },
+            "atmosphere": {
+                "humidity": "88",
+                "pressure": "30.39",
+                "rising": "0",
+                "visibility": "3.73"
+            },
+            "astronomy": {
+                "sunrise": "6:25 am",
+                "sunset": "5:28 pm"
+            },
+            "image": {
+                "title": "Yahoo! Weather",
+                "width": "142",
+                "height": "18",
+                "link": "http://weather.yahoo.com",
+                "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+            },
+            "item": {
+                "title": "Conditions for Bronte, AU at 2:29 pm AEST",
+                "lat": "-33.9",
+                "long": "151.26",
+                "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Bronte__AU/*http://weather.yahoo.com/forecast/ASXX0086_f.html",
+                "pubDate": "Sat, 23 Aug 2014 2:29 pm AEST",
+                "condition": {
+                    "code": "11",
+                    "date": "Sat, 23 Aug 2014 2:29 pm AEST",
+                    "temp": "61",
+                    "text": "Light Rain Shower"
+                },
+                "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/11.gif\"/><br />\n<b>Current Conditions:</b><br />\nLight Rain Shower, 61 F<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Showers. High: 62 Low: 51<br />\nSun - Partly Cloudy. High: 65 Low: 49<br />\nMon - Showers. High: 65 Low: 53<br />\nTue - Rain. High: 62 Low: 53<br />\nWed - Rain. High: 61 Low: 53<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Bronte__AU/*http://weather.yahoo.com/forecast/ASXX0086_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+                "forecast": [
+                    {
+                        "code": "11",
+                        "date": "23 Aug 2014",
+                        "day": "Sat",
+                        "high": "62",
+                        "low": "51",
+                        "text": "Showers"
+                    },
+                    {
+                        "code": "30",
+                        "date": "24 Aug 2014",
+                        "day": "Sun",
+                        "high": "65",
+                        "low": "49",
+                        "text": "Partly Cloudy"
+                    },
+                    {
+                        "code": "11",
+                        "date": "25 Aug 2014",
+                        "day": "Mon",
+                        "high": "65",
+                        "low": "53",
+                        "text": "Showers"
+                    },
+                    {
+                        "code": "12",
+                        "date": "26 Aug 2014",
+                        "day": "Tue",
+                        "high": "62",
+                        "low": "53",
+                        "text": "Rain"
+                    },
+                    {
+                        "code": "12",
+                        "date": "27 Aug 2014",
+                        "day": "Wed",
+                        "high": "61",
+                        "low": "53",
+                        "text": "Rain"
+                    }
+                ],
+                "guid": {
+                    "isPermaLink": "false",
+                    "content": "ASXX0086_2014_08_27_7_00_AEST"
+                }
+            }
+        }
+    }
+}}

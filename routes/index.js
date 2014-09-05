@@ -1,23 +1,46 @@
+var Q = require('q');
+var QC = require('q-combinators');
+var _ = require('lodash');
+var redis = require('../clients/redis');
+var C = require('../config/config.json');
+var tides = require('../clients/tides');
+
 var express = require('express');
 var router = express.Router();
 
+function get(key) {
 
-if (process.env.REDISTOGO_URL) {
-    var rtg = require("url").parse(process.env.REDISTOGO_URL);
-    var redis = require("redis").createClient(rtg.port, rtg.hostname);
-    redis.auth(rtg.auth.split(":")[1]);
-} else {
-    var redis = require("redis").createClient();
+    return redis.get(C.key[key])
+        .then(function (data) {
+            if (data === null) {
+                throw new Error("This was null: " + key);
+            }
+            return data;
+        });
 }
 
-/* GET home page. */
 router.get('/', function (req, res) {
-    redis.set("hello", "world");
 
-    redis.get('hello', function (error, result) {
-        if (error) console.log('Error: ' + error);
-        else  res.render('index', { title: result });
-    });
+    QC.object.fulfilled({
+        email: get("email"),
+        weather: get("weather"),
+        tides: get("tides"),
+        location: get("location")
+    })
+        .then(function (data) {
+
+            if (!_.isUndefined(data.tides)) {
+                data.tides = tides.calculateCurrent(data.tides);
+            }
+
+            res.header('Content-Type', 'application/json; charset=utf-8');
+            res.header('Access-Control-Allow-Origin', '*');
+            res.send(JSON.stringify(data));
+
+        }).fail(function (error) {
+            console.log(error);
+            res.send(500, JSON.stringify(error.message));
+        }).done();
 
 });
 
