@@ -28,7 +28,7 @@ function getUnreadCount() {
 
         // must include this -  https://github.com/mscdex/node-imap/issues/303
         imap.on('error', function (err) {
-            // will be ECONNRESET - we don't care
+            console.log(err);
         });
     });
 }
